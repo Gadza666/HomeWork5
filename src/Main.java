@@ -56,7 +56,7 @@ public class Main {
         System.out.println(" Task 9 ");
 
         int amountSaving1 = 29000;
-        int total1 = 0;
+        float total1 = 0;
         for (int i = 1; i <= 12; i++) {
             total1 = total1 + total1 / 100;
             total1 = total1 + amountSaving1;
