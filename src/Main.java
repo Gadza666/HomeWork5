@@ -28,8 +28,10 @@ public class Main {
 
         System.out.println(" Task 5 ");
 
-        for (int i = 1904; i < 2096; i += 4) {
-            System.out.println(i + " год является високосным ");
+        for (int i = 1904; i < 2096; i ++) {
+            if (i % 4 == 0 && i % 100 != 0 || i % 400 == 0) {
+                System.out.println(i + " год является високосным ");
+            }
         }
 
         System.out.println(" Task 6 ");
@@ -58,8 +60,8 @@ public class Main {
         int amountSaving1 = 29000;
         float total1 = 0;
         for (int i = 1; i <= 12; i++) {
-            total1 = total1 + total1 / 100;
             total1 = total1 + amountSaving1;
+            total1 = total1 + total1 / 100;
             System.out.println("Месяц " + i + ", сумма накоплений равна " + total1 + " рублей");
         }
 
